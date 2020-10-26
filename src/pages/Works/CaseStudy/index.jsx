@@ -5,7 +5,6 @@ const CaseStudy = () => {
 
     return (
         <div className="container">
-
             <div className="row">
                 <div className="col-md-4">
                     <Item title="Nike, the new website" />
