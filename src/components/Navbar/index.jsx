@@ -17,10 +17,10 @@ const Navbar = ({setLanguage}) =>
             </ul>
             <ul className="navbar-nav">
                 <li className="nav-item">
-                <button className="nav-link" onClick={() => setLanguage('fr')}>French</button>
+                <button className="nav-link" onClick={() => setLanguage('fr')}>fr</button>
                 </li>
                 <li className="nav-item">
-                    <button className="nav-link" onClick={() => setLanguage('en')}>English</button>
+                    <button className="nav-link" onClick={() => setLanguage('en')}>en</button>
                 </li>
             </ul>
         </div>
