@@ -1,6 +1,7 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 
-const Navbar = () =>
+const Navbar = ({setLanguage}) =>
 
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Link to="/" className="navbar-brand">Mon portolio</Link>
@@ -8,12 +9,20 @@ const Navbar = () =>
             <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
+            <ul className="navbar-nav mr-auto">
                 <Link to="/" className="nav-item nav-link active">Home</Link>
                 <Link to="/About" className="nav-item nav-link ">About</Link>
                 <Link to="/Contact" className="nav-item nav-link ">Contact</Link>
                 <Link to="/Works" className="nav-item nav-link ">Works</Link>
-            </div>
+            </ul>
+            <ul className="navbar-nav">
+                <li className="nav-item">
+                <button className="nav-link" onClick={() => setLanguage('fr')}>French</button>
+                </li>
+                <li className="nav-item">
+                    <button className="nav-link" onClick={() => setLanguage('en')}>English</button>
+                </li>
+            </ul>
         </div>
     </nav>
 
